@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--pale-blue);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+.card {
+  margin: 50px auto;
+  width: 450px;
+  background-color: #fff;
+  color: var(--desaturated-blue);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.title {
+  color: var(--dark-blue);
+  font-weight: 900;
+  font-size: 32px;
+}
+
+.hero-img {
+  width: 100%;
+  margin-inline: auto;
+}
+
+.top-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+.top-container > * {
+  margin: 13px 0;
+}
+.order-summary-description {
+  line-height: 1.5;
+}
+
+.proceed-button {
+  background-color: var(--bright-blue);
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  width: 100%;
+  font-weight: 700;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 20px 30px -8px rgba(197, 189, 245);
+  border-radius: 12px;
+}
+
+.proceed-button:hover {
+  /* background-color: rgb(231, 134, 134); */
+  opacity: 0.8;
+}
+
+.cancel-button {
+  background-color: #fff;
+  color: var(--desaturated-blue);
+  border: none;
+  margin-top: 22px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.cancel-button:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.middle-container {
+  font-size: 16px;
+  background-color: var(--very-pale-blue);
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.middle-container a {
+  color: var(--bright-blue);
+  font-size: 13px;
+}
+
+.middle-container a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.icon-description {
+  margin-right: 75px;
+  line-height: 20px;
+}
+
+/* @media (min-width: 450px) {
+  body {
+    background: url(images/pattern-background-desktop.svg),
+      var(--clr-primary-pale-blue);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .title {
+    font-size: 1.7rem;
+    padding-top: 1.7em;
+    padding-bottom: 0.7em;
+  }
+
+  .order-summary-description {
+    font-size: 1.05rem;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  .middle-container {
+    margin: 0 3em 2em 3em;
+    padding: 1.5em;
+  }
+
+  .icon-description  {
+    font-size: 1.05rem;
+  }
+
+  button {
+    margin-left: 3em;
+    margin-right: 3em;
+  } */
